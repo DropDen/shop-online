@@ -37,11 +37,6 @@ nav {
   flex-grow: 1;
 }
 
-.cart-quantity {
-
-
-}
-
 .cart {
   position:fixed;
   bottom: 2rem;
@@ -51,7 +46,7 @@ nav {
   padding: 1rem;
 
 }
-@media (min-wifth: 767px) {
+@media (max-width: 767px) {
   .cart {
     top: 5 rem;
     bottom: unset;
@@ -98,3 +93,19 @@ nav {
   vertical-align: midle;
   color: #25a69a;
 }
+
+#toast-container {
+  top: 3rem !important;
+  animation: fade-in 250ms ease-in-out;
+}
+
+@keyframes fade-in {
+  from{
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  }
